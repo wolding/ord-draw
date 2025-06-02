@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Draw - Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Player</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+    <h1>Prize Draw</h1>
+    <div>
+        <label for="codeInput">Enter your 4-digit code:</label>
+        <input type="text" id="codeInput" maxlength="4" pattern="\d{4}" required>
+        <button id="submitBtn">Submit</button>
+        <div id="videoContainer" style="display: none;">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="script.js" type="video/mp4">
+                Your browser does not support this video tag.
+            </video>
+        </div>
+    </div>
+    <div id="resultMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
