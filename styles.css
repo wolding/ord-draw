@@ -1,96 +1,67 @@
-
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("iStock-536507269.jpg");
+    font-family: Arial, sans-serif; /* Set the font family */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    background-image: url("iStock-536507269.jpg"); /* Background image */
+    color: #fff; /* Text color set to white */
 }
 
+/* Navigation bar styles */
 nav {
-    background-color: #333;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px;
+    background-color: #333; /* Dark background for the navbar */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    padding: 10px; /* Padding around the navbar */
 }
 
+/* Styles for the unordered list in the navbar */
+nav ul {
+    list-style-type: none; /* Remove bullet points from list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items in a row */
+}
+
+/* Styles for each list item in the navbar */
+nav li {
+    margin: 0 15px; /* Horizontal spacing between list items */
+}
+
+/* Styles for links in the navbar */
 nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
 }
 
+/* Hover effect for links in the navbar */
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }
 
-#container, #adminContainer {
-    text-align: center;
-    margin-top: 20px;
-    background-color: rgba(240, 248, 255, 0.61);
-    padding: 20px;
-}
-
-#codeList {
-  list-style-type: none;
-  padding: 0;
-}
-
+/* Input field styles */
 input {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-    text-align: center;
+    font-family: inherit; /* Inherit font from body */
+    width: 100%; /* Full width of the container */
+    border: 0; /* No border */
+    border-bottom: 2px solid #9b9b9b; /* Bottom border with color */
+    outline: 0; /* Remove outline on focus */
+    font-size: 1.3rem; /* Font size for input */
+    color: #fff; /* Text color set to white */
+    padding: 7px 0; /* Vertical padding */
+    background: transparent; /* Transparent background */
+    transition: border-color 0.2s; /* Smooth transition for border color */
+    text-align: center; /* Center text in input */
 }
 
+/* Button styles */
 button {
-    border-radius: 10px;
-    height: 60%;
-    width: 40%;
-}
-
-/* CSS */
-.styled {
-  background-color: #ef1f1f;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.styled:hover,
-.styled:focus {
-  background-color: #e15858;
+    border-radius: 10px; /* Rounded corners for buttons */
 }
 
 
