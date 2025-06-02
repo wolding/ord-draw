@@ -43,7 +43,7 @@ function handlePlayerCodeSubmission() {
             }, 5000);
         }
     } else {
-        resultMessage.textContent = "Sorry, this code is not a winning code.";
+        //resultMessage.textContent = "Sorry, this code is not a winning code.";
         videoSource.src = 'How To Open a Door.mp4'; // Path to losing video
         videoContainer.style.display = 'block';
         videoPlayer.load();
