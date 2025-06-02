@@ -25,13 +25,37 @@ function handlePlayerCodeSubmission() {
     const videoSource = document.getElementById('videoSource');
     const videoContainer = document.getElementById('videoContainer');
 
-    const code = codeInput.value;
+    const code = codeInput.value.trim(); //Trim Whitespace
+
+    // Error Checking
+    if (code === '') {
+        resultMessage.textContent = "Please enter a code.";
+        setTimeout(() => {
+                resultMessage.textContent = ""; // Reset message after 5 seconds
+            }, 5000);
+        return; // Exit the function if input is empty
+    }
+
+    if (code.length !== 4) {
+        resultMessage.textContent = "Code must be exactly 4 digits long.";
+        setTimeout(() => {
+                resultMessage.textContent = ""; // Reset message after 5 seconds
+            }, 5000);
+        return; // Exit the function if input length is incorrect
+    }
+
+    if (!/^\d{4}$/.test(code)) { // Check for exactly 4 digits
+        resultMessage.textContent = "Code must be a 4-digit number.";
+        setTimeout(() => {
+                resultMessage.textContent = ""; // Reset message after 5 seconds
+            }, 5000);
+        return; // Exit the function if input format is incorrect
+    }
 
     // Check if the code is a winning code
     if (winningCodes.includes(code)) {
         if (!redeemedCodes.includes(code)) {
             redeemedCodes.push(code); // Mark code as redeemed
-            //resultMessage.textContent = "Congratulations! You won! Playing winning video...";
             videoSource.src = 'ORD Winner Video.mp4'; // Path to winning video
             videoContainer.style.display = 'block';
             videoPlayer.load();
@@ -43,7 +67,7 @@ function handlePlayerCodeSubmission() {
             }, 5000);
         }
     } else {
-        //resultMessage.textContent = "Sorry, this code is not a winning code.";
+        redeemedCodes.push(code); // Mark Code as redeemed
         videoSource.src = 'How To Open a Door.mp4'; // Path to losing video
         videoContainer.style.display = 'block';
         videoPlayer.load();
