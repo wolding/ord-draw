@@ -5,19 +5,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* 70% screen height - return to 100vh if deleting border*/
     height: 100vh;
     background-image: url("iStock-536507269.jpg");
-    /*Start ORD Border
-    border-style: solid;
-    border-color: #e51f1f;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-width: 50px;
-    width: 40%;
-    align-content: center;
-    margin: auto;
-     End ORD Border*/
 }
 
 nav {
