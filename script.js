@@ -179,9 +179,18 @@ function resetRound() {
 document.addEventListener('DOMContentLoaded', () => {
     loadCodes(); // Load codes from localStorage
 
-    // Check if we are on the players page
+   // Check if we are on the players page
     if (document.getElementById('codeInput')) {
         document.getElementById('submitBtn').addEventListener('click', handlePlayerCodeSubmission);
+
+        // Add event listener for the Enter key in the input field
+        const codeInput = document.getElementById('codeInput');
+        codeInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') { // Check if the pressed key is Enter
+                event.preventDefault(); // Prevent the default action (form submission)
+                handlePlayerCodeSubmission(); // Call the submit function
+            }
+        });
     }
 
     // Check if we are on the admin page
