@@ -33,6 +33,7 @@ function handlePlayerCodeSubmission() {
         setTimeout(() => {
                 resultMessage.textContent = ""; // Reset message after 5 seconds
             }, 5000);
+        codeInput.value = ''; // Clear input field
         return; // Exit the function if input is empty
     }
 
@@ -41,6 +42,7 @@ function handlePlayerCodeSubmission() {
         setTimeout(() => {
                 resultMessage.textContent = ""; // Reset message after 5 seconds
             }, 5000);
+        codeInput.value = ''; // Clear input field
         return; // Exit the function if input length is incorrect
     }
 
@@ -49,6 +51,7 @@ function handlePlayerCodeSubmission() {
         setTimeout(() => {
                 resultMessage.textContent = ""; // Reset message after 5 seconds
             }, 5000);
+        codeInput.value = ''; // Clear input field
         return; // Exit the function if input format is incorrect
     }
 
