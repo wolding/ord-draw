@@ -37,8 +37,8 @@ function handlePlayerCodeSubmission() {
         return; // Exit the function if input is empty
     }
 
-    if (code.length !== 4) {
-        resultMessage.textContent = "Code must be exactly 4 digits long.";
+    if (code.length !== 3) {
+        resultMessage.textContent = "Code must be exactly 3 digits long.";
         setTimeout(() => {
                 resultMessage.textContent = ""; // Reset message after 5 seconds
             }, 5000);
@@ -46,8 +46,8 @@ function handlePlayerCodeSubmission() {
         return; // Exit the function if input length is incorrect
     }
 
-    if (!/^\d{4}$/.test(code)) { // Check for exactly 4 digits
-        resultMessage.textContent = "Code must be a 4-digit number.";
+    if (!/^\d{3}$/.test(code)) { // Check for exactly 4 digits
+        resultMessage.textContent = "Code must be a 3-digit number.";
         setTimeout(() => {
                 resultMessage.textContent = ""; // Reset message after 5 seconds
             }, 5000);
@@ -113,7 +113,7 @@ function addWinningCode() {
     const newCodeInput = document.getElementById('newCodeInput');
     const newCode = newCodeInput.value;
 
-    if (newCode.length === 4 && !winningCodes.includes(newCode)) {
+    if (newCode.length === 3 && !winningCodes.includes(newCode)) {
         winningCodes.push(newCode);
         updateWinningCodesList();
         newCodeInput.value = ''; // Clear input field
