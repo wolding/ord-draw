@@ -71,7 +71,7 @@ function handlePlayerCodeSubmission() {
         }
     } else {
         redeemedCodes.push(code); // Mark Code as redeemed
-        videoSource.src = 'How To Open a Door.mp4'; // Path to losing video
+        videoSource.src = 'ORD Losing Video.mp4'; // Path to losing video
         videoContainer.style.display = 'block';
         videoPlayer.load();
         videoPlayer.play();
