@@ -46,13 +46,14 @@ nav a:hover {
 
 /* Logo in container */
 .logo-container {
-    text-align: centre;
+    text-align: center;
     margin: 20px 0; /* Space between nav and logo */
 }
 
 .logo {
-    max-width: 20%; /* Scale the Logo */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 20%; /* Scale the logo */
+    height: auto;    /* Maintain aspect ratio */
+    align-content: center;
 }
 
 /* Input field styles */
