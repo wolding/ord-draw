@@ -44,6 +44,17 @@ nav a:hover {
     text-decoration: underline; /* Underline links on hover */
 }
 
+/* Logo in container */
+.logo-container {
+    text-align: centre;
+    margin: 20px 0; /* Space between nav and logo */
+}
+
+.logo {
+    max-width: 20%; /* Scale the Logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Input field styles */
 input {
     font-family: inherit; /* Inherit font from body */
