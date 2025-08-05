@@ -61,12 +61,16 @@ function handlePlayerCodeSubmission() {
     // **NEW: Define winning and losing videos for each skin**
     const videos = {
         ord: {
-            winning: 'ORD Winner Video.mp4', // Update with actual path
-            losing: 'ORD Losing Video.mp4'    // Update with actual path
+            winning: 'ORD Winner Video.mp4',
+            losing: 'ORD Losing Video.mp4' 
         },
         rehab: {
-            winning: 'RM Winning Video (AddCare).mp4', // Update with actual path
-            losing: 'RM Losing Video (AddCare).mp4'    // Update with actual path
+            winning: 'RM Winning Video (AddCare).mp4',
+            losing: 'RM Losing Video (AddCare).mp4' 
+        },
+        livebig: {
+            winning: 'LB Winning Video.mp4',
+            losing: 'LB Losing Video.mp4'
         }
     };
 
