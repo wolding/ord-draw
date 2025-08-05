@@ -54,12 +54,27 @@ function handlePlayerCodeSubmission() {
         codeInput.value = ''; // Clear input field
         return; // Exit the function if input format is incorrect
     }
+    
+    // **NEW: Get the current skin from the body class**
+    const currentSkin = document.body.className; // Get the current skin class
+
+    // **NEW: Define winning and losing videos for each skin**
+    const videos = {
+        ord: {
+            winning: 'ORD Winner Video.mp4', // Update with actual path
+            losing: 'How To Open a Door.mp4'    // Update with actual path
+        },
+        rehab: {
+            winning: 'RM Winning Video (AddCare).mp4', // Update with actual path
+            losing: 'RM Losing Video (AddCare).mp4'    // Update with actual path
+        }
+    };
 
     // Check if the code is a winning code
     if (winningCodes.includes(code)) {
         if (!redeemedCodes.includes(code)) {
             redeemedCodes.push(code); // Mark code as redeemed
-            videoSource.src = 'ORD Winner Video.mp4'; // Path to winning video
+            videoSource.src = videos[currentSkin].winning; // **Updated to use skin-specific winning video**
             videoContainer.style.display = 'block';
             videoPlayer.load();
             videoPlayer.play();
@@ -71,7 +86,7 @@ function handlePlayerCodeSubmission() {
         }
     } else {
         redeemedCodes.push(code); // Mark Code as redeemed
-        videoSource.src = 'ORD Losing Video.mp4'; // Path to losing video
+        videoSource.src = videos[currentSkin].losing; // **Updated to use skin-specific losing video**
         videoContainer.style.display = 'block';
         videoPlayer.load();
         videoPlayer.play();
