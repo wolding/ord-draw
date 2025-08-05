@@ -62,7 +62,7 @@ function handlePlayerCodeSubmission() {
     const videos = {
         ord: {
             winning: 'ORD Winner Video.mp4', // Update with actual path
-            losing: 'How To Open a Door.mp4'    // Update with actual path
+            losing: 'ORD Losing Video.mp4'    // Update with actual path
         },
         rehab: {
             winning: 'RM Winning Video (AddCare).mp4', // Update with actual path
