@@ -20,6 +20,12 @@ body.rehab {
     background-repeat: no-repeat;
 }
 
+body.livebig {
+    background-image: url(Spinning-wheel-LB.gif);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+}
+
 /* Navigation bar styles */
 nav {
     background-color: #333; /* Dark background for the navbar */
