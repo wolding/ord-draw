@@ -21,6 +21,7 @@ body.rehab {
 }
 
 body.livebig {
+    background-color: #e51f1f;
     background-image: url(Spinning-wheel-LB.gif);
     background-position: 50% 10%;
     background-repeat: no-repeat;
