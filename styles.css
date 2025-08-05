@@ -6,8 +6,17 @@ body {
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     height: 100vh; /* Full viewport height */
-    background-image: url("iStock-536507269.jpg"); /* Background image */
     color: #fff; /* Text color set to white */
+}
+
+body.ord {
+    background-image: url("iStock-536507269.jpg"); /* Background image */
+}
+
+body.rehab {
+    background-image: url(Spinning-wheel-RM.gif);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
 }
 
 /* Navigation bar styles */
