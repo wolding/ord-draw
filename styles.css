@@ -5,7 +5,6 @@ body {
     flex-direction: column; /* Arrange children in a column */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    background-color: #172752;
     height: 100vh; /* Full viewport height */
     color: #fff; /* Text color set to white */
 }
@@ -16,6 +15,7 @@ body.ord {
 
 body.rehab {
     background-image: url(Spinning-wheel-RM.gif);
+    background-color: #172752;
     background-position: 50% 10%;
     background-repeat: no-repeat;
 }
