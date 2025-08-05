@@ -5,6 +5,7 @@ body {
     flex-direction: column; /* Arrange children in a column */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
+    background-color: #172752;
     height: 100vh; /* Full viewport height */
     color: #fff; /* Text color set to white */
 }
