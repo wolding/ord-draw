@@ -9,6 +9,10 @@ body {
     color: #fff; /* Text color set to white */
 }
 
+body.admin {
+    background-color: #000000;
+}
+
 body.ord {
     background-image: url("iStock-536507269.jpg"); /* Background image */
 }
