@@ -65,8 +65,8 @@ function handlePlayerCodeSubmission() {
             losing: 'ORD Losing Video.mp4' 
         },
         rehab: {
-            winning: 'RM Winning Video (AddCare).mp4',
-            losing: 'RM Losing Video (AddCare).mp4' 
+            winning: 'RM Winning Video (RM).mp4',
+            losing: 'RM Losing Video (RM).mp4' 
         },
         livebig: {
             winning: 'LB Winning Video.mp4',
